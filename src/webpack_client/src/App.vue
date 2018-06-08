@@ -1,8 +1,16 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+  <section class="hero is-medium is-primary is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Vulma css Framework
+        </h1>
+        <h2 class="subtitle">
+          Full-flexbox
+        </h2>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>

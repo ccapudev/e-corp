@@ -15,7 +15,7 @@ new Vue({
   el: '#app',
   router,
   components: {
-    vContainer
+    vContainer,
   },
   render: h => h(App)
 })

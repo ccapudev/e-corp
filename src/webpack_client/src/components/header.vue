@@ -3,7 +3,9 @@
     <div class="container">
       <div class="navbar-menu">
         <div class="navbar-start">
-          <a href="#" class="navbar-item">Logo</a>
+          <a href="#" class="navbar-item">
+             <img src="@/assets/logo2.png">
+          </a>
         </div>
         <div class="navbar-end">
           <a href="#" class="navbar-item">
@@ -14,7 +16,7 @@
               Productos
             </span>
           </a>
-          <a href="#" class="navbar-item">Productos</a>
+          <a href="#" class="navbar-item">Contacto</a>
         </div>
       </div>
     </div>

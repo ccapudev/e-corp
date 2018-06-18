@@ -9,6 +9,7 @@ import vContainer from './components/container.vue'
 Vue.config.productionTip = false
 
 require('./assets/vulma/main.scss')
+require('./assets/stylus/main.styl')
 
 /* eslint-disable no-new */
 new Vue({

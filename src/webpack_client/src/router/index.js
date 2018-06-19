@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import container from '@/components/container'
+import home from '@/pages/home'
 
 Vue.use(Router)
 
@@ -9,8 +9,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'container',
-      component: container
+      name: 'home',
+      component: home
     }
   ]
 })

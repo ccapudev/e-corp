@@ -4,7 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-import vContainer from './components/container.vue'
+import common from './components/index.js'
+
+// import vContainer from './components/container.vue'
 
 Vue.config.productionTip = false
 
@@ -15,8 +17,6 @@ require('./assets/stylus/main.styl')
 new Vue({
   el: '#app',
   router,
-  components: {
-    vContainer,
-  },
+  components: common(),
   render: h => h(App)
 })

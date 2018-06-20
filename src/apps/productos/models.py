@@ -2,8 +2,13 @@ from django.db import models
 from apps.syscore.models import AuditableModel
 
 
-# Create your models here.
+class Categoria(AuditableModel):
+	nombre = models.CharField("Nombre", max_length=50)
+	relacion = models.ForeignKey(
+		"self", verbose_name='Categoría padre', null=True, blank=True)
+
 class Producto(AuditableModel):
+	categoria = models.ForeignKey("producto.Categoria")
     precio = models.DecimalField(
         "Precio de artículo", max_digits=8, decimal_places=2)
     moneda = models.ForeignKey("sistema.Moneda")

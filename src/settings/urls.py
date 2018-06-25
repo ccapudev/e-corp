@@ -16,8 +16,10 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from apps.usuarios import urls as usuarios_urls
+from rest_framework_jwt.views import obtain_jwt_token
 
 urlpatterns = [
+	url(r'^jwt/auth/', obtain_jwt_token),
     url(r'^admin/', admin.site.urls),
     url(r'^', include(usuarios_urls,)),
 ]

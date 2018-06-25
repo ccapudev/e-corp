@@ -130,3 +130,21 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "templates/static"),
 ]
 STATIC_URL = '/static/'
+
+
+# RestFramework Config
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        # 'rest_framework.authentication.BasicAuthentication',
+    ),
+}
+
+
+JWT_AUTH = {
+    'JWT_PAYLOAD_HANDLER': 'settings.jwt_utils.jwt_payload_handler'
+}

@@ -6,3 +6,4 @@ __pycache__
 *.back
 # *.json
 node_modules
+.vscode
